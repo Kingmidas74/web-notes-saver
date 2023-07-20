@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Web Note Saver",
+    "version": "0.0.1",
+    "description": "Save notes and URLs quickly as you browse the web",
+    "permissions": ["activeTab", "storage", "clipboardRead", "clipboardWrite", "contextMenus", "tabs"],
+    "author": "denis@suleimanov.pro",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png"
+        }
+    }
+}

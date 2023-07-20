@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Save Note</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        #original-note {
+            margin-bottom: 20px;
+        }
+        #url {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script defer src="note.js"></script>
+</head>
+<body>
+    <h1>Save Note</h1>
+    <p id="original-note"></p>
+    <p id="url"></p>
+    <form id="note-form">
+        <textarea id="additional-notes" rows="4" cols="50" placeholder="Enter additional notes here..."></textarea><br/>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
