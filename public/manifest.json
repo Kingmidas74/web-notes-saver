@@ -6,10 +6,11 @@
     "permissions": ["activeTab", "storage", "clipboardRead", "clipboardWrite", "contextMenus", "tabs"],
     "author": "denis@suleimanov.pro",
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "./static/js/background.js"
     },
     "action": {
-        "default_popup": "popup.html",
+        "default_popup": "index.html",
+        "default_title": "Web Note Saver",
         "default_icon": {
             "16": "images/icon16.png"
         }

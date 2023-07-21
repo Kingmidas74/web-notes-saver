@@ -12,9 +12,9 @@ function createContextMenu() {
             'audio'
           ],
     });
-}
+};
 
-function saveNote(info: chrome.contextMenus.OnClickData) {
+function saveNote2(info: chrome.contextMenus.OnClickData) {
     const note = encodeURIComponent(info.selectionText?.toString() || '');
     const url = encodeURIComponent(info.pageUrl);
     
@@ -23,5 +23,6 @@ function saveNote(info: chrome.contextMenus.OnClickData) {
 
 
 chrome.runtime.onInstalled.addListener(createContextMenu);
-chrome.contextMenus.onClicked.addListener(saveNote);
+chrome.contextMenus.onClicked.addListener(saveNote2);
 
+export {};
