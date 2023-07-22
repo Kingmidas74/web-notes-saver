@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import NoteList from '../note-list/note-list';
 import { NoteProps } from '../note/note';
 
+import './popup.css';
+
 const Popup: React.FC = () => {
   const [notes, setNotes] = useState<NoteProps[]>([]);
 
@@ -20,7 +22,10 @@ const Popup: React.FC = () => {
   chrome.storage.sync.get('notes', showNotes);
   }, []);
 
-  return <NoteList notes={notes} onLinkClick={handleLinkClick} />;
+  return <main className="main">
+          <h1 className='main__header'>Notes</h1>
+          <NoteList notes={notes} onLinkClick={handleLinkClick} />
+         </main>
 };
 
 export default Popup;

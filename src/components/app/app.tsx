@@ -11,7 +11,6 @@ const App = () => {
     const noteParam = params.get('note');
     const urlParam = params.get('url');
 
-    // If the parameters are not null, decode them. Otherwise, use an empty string.
     const note = noteParam ? decodeURIComponent(noteParam) : '';
     const url = urlParam ? decodeURIComponent(urlParam) : '';
 

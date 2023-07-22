@@ -9,14 +9,14 @@ export interface NoteProps {
 
 const Note: React.FC<NoteProps & { onLinkClick: (uri: string) => void }> = ({ anchor, text, uri, onLinkClick }) => {
   return (
-      <div className="note">
-        <h1>{anchor}</h1>
+      <li className="note-list-item">
+        <h2>{anchor}</h2>
         <p>{text}</p>
         <a href={uri} onClick={(e) => {
             e.preventDefault(); 
             onLinkClick(uri);
         }}>Link</a>
-      </div>
+      </li>
     );
   }
 

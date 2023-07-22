@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Popup from './Popup';
+import Popup from './popup';
 
 test('renders learn react link', () => {
   render(<Popup />);
